@@ -1,0 +1,68 @@
+body {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.s2win-wrapper {
+    margin: 0 auto;
+    width: 440px;
+}
+
+form {
+    margin-bottom: 40px;
+}
+
+.wheel-wrap {
+    position: relative;
+    width: 440px;
+    height: 440px;
+    overflow: hidden;
+}
+
+canvas.spin2win {
+    width: 440px;
+    height: 440px;
+}
+
+.spin-start {
+    position: absolute;
+    top: 50%;
+    margin-top: -43px;
+    left: 50%;
+    margin-left: -43px;
+    width: 86px;
+    height: 86px;
+    line-height: 86px;
+    background: white;
+    border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+    text-align: center;
+    color: #4d4d4d;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@-webkit-keyframes spinBtn {
+    from {
+    transform: rotate(0deg) skew(0deg);
+    -webkit-transform: rotate(0deg) skew(0deg);
+    -moz-transform: rotate(0deg) skew(0deg);
+    }
+    to {
+    transform: rotate(1080deg) skew(0deg);
+    -webkit-transform: rotate(1080deg) skew(0deg);
+    -moz-transform: rotate(1080deg) skew(0deg);
+    }
+}
+.spin-btn {
+    animation: spinBtn 2.4s 1 cubic-bezier(.28,1,0,.98);
+    -moz-animation: spinBtn 2.4s 1 cubic-bezier(.28,1,0,.98);
+    -webkit-animation: spinBtn 2.4s 1 cubic-bezier(.28,1,0,.98);
+}
+
+.winner span {
+    color: red;
+}

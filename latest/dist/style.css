@@ -1,4 +1,22 @@
 body {background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(226,37,37,1) 0%, rgba(211,49,49,1) 82.8% );}
 select { display: block;color:orange;font-size:1.5em;background-image: radial-gradient( circle 358px at 47.9% 23.5%,  rgba(15,14,14,1) 11.4%, rgba(16,2,2,1) 100.2% );!important;
 color:yellow!important;} /* unimportant */
+body {
+  height: 200vh;
+  background: darkgrey;
+}
+
+html::-webkit-scrollbar {
+    width: 15px;
+}
+ 
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, rgba(238,31,73,1) 0%, rgba(150,28,88,1) 100%);
+  outline: 1px solid slategrey;
+  border-radius: 7px;
+}
 .iframe-container { overflow: hidden; position: relative; } .iframe-container iframe { top: 0; border:1px solid #ccc; width: 80%; height: 900px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-bottom:20px; margin-top:20px; }

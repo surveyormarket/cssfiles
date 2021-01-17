@@ -1,0 +1,91 @@
+// Setup
+@import "compass/css3";
+@import url( https://fonts.googleapis.com/css?family=Roboto:300);
+body {font-family: 'Roboto', sans-serif;}
+$red: #AD363B;
+
+.container {
+	margin: 90px auto 0;
+	width: 220px;
+}
+
+.temple-menu {
+	position: relative;
+	
+	&__img {width: 100%;}
+}
+
+// Menu Icon
+.mobile-nav {
+	display: block;
+	border: none;
+	@include box-sizing(border-box);
+	height: 42px;
+	width: 70px;
+	margin: -46px auto 0;
+	position: absolute;
+	left: 75px;
+	cursor: pointer;
+	background-color: transparent;
+	padding: 0;
+}
+
+.mobile-nav__icon {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 45px;
+	padding: 0;
+	
+	/* hamburger menu 3 lines */
+	span, span:before, span:after  {
+		height: 10px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: $red;
+		position: absolute;
+		display: block;
+		content: '';
+		text-indent: -9999px;
+		color: white;
+		@include transition(background-color ease-in-out .3s);	
+	}
+	
+	&.active {
+		span, span:before, span:after  {
+			background-color: lighten($red, 20%);	
+		}
+			
+	}
+	
+	//menu bar positions
+	span {
+		&:before {top: -16px;}
+		top: 15px;
+		&:after {top: 16px}
+	}
+
+}
+
+
+
+// Menu Dropdown
+.menu {
+	margin-top: 20px;
+	display: none;
+	
+	a {
+		display: block;
+		font-size: 22px;
+		text-align: center;
+		text-decoration: none;
+		padding: 5px 0;
+		color: #222;
+		font-weight: 300;
+		
+		&:hover {
+			color: #AD363B;
+		}
+	}
+}

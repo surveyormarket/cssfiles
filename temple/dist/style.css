@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: 90px auto 0;
+  width: 220px;
+}
+
+.temple-menu {
+  position: relative;
+}
+.temple-menu__img {
+  width: 100%;
+}
+
+.mobile-nav {
+  display: block;
+  border: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 42px;
+  width: 70px;
+  margin: -46px auto 0;
+  position: absolute;
+  left: 75px;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+}
+
+.mobile-nav__icon {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 45px;
+  padding: 0;
+  /* hamburger menu 3 lines */
+}
+.mobile-nav__icon span, .mobile-nav__icon span:before, .mobile-nav__icon span:after {
+  height: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #AD363B;
+  position: absolute;
+  display: block;
+  content: '';
+  text-indent: -9999px;
+  color: white;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+.mobile-nav__icon.active span, .mobile-nav__icon.active span:before, .mobile-nav__icon.active span:after {
+  background-color: #d47579;
+}
+.mobile-nav__icon span {
+  top: 15px;
+}
+.mobile-nav__icon span:before {
+  top: -16px;
+}
+.mobile-nav__icon span:after {
+  top: 16px;
+}
+
+.menu {
+  margin-top: 20px;
+  display: none;
+}
+.menu a {
+  display: block;
+  font-size: 22px;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 0;
+  color: #222;
+  font-weight: 300;
+}
+.menu a:hover {
+  color: #AD363B;
+}

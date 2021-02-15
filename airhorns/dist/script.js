@@ -10,7 +10,7 @@ const APP = new Application({
   forceCanvas: true });
 
 
-const TEXTURE = Texture.from('./ah.png');
+const TEXTURE = Texture.from('https://storage.ning.com/topology/rest/1.0/file/get/8554176253?profile=RESIZE_400x');
 
 const fireHorn = () => {
   const horn = new Sprite(TEXTURE);

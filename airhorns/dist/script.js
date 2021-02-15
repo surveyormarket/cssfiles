@@ -10,7 +10,7 @@ const APP = new Application({
   forceCanvas: true });
 
 
-const TEXTURE = Texture.from('https://assets.codepen.io/605876/air-horn.png');
+const TEXTURE = Texture.from('./ah.png');
 
 const fireHorn = () => {
   const horn = new Sprite(TEXTURE);
@@ -20,7 +20,7 @@ const fireHorn = () => {
   const resultScale = random(0.25, 0.6);
   timeline({
     onStart: () =>
-    new Audio('https://assets.codepen.io/605876/air-horn.mp3').play(),
+    new Audio('./air-horn.mp3').play(),
     onComplete: () => APP.stage.removeChild(horn) }).
 
   set(horn, {

@@ -1,0 +1,150 @@
+.description {
+  margin-top: 50px;
+}
+
+span.left-arrow, span.right-arrow {
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  padding: 1em;
+  position: absolute;
+  top: 80%;
+  transition: all 0.3s ease;
+  width: auto;
+  z-index: 999;
+}
+span.left-arrow:hover, span.right-arrow:hover {
+  background-color: #212121 !important;
+  color: #ffffff;
+}
+
+.left-arrow {
+  right: 60px;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+.slider {
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+.slider .carousel {
+  height: 200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.slider .carousel .carousel-footer {
+  color: #e40743;
+  bottom: -80px;
+  position: relative;
+}
+.slider .carousel li {
+  background-color: #cc0000;
+  display: block;
+  float: left;
+  height: 300px;
+  margin: 0;
+  padding: 70px 0;
+  position: relative;
+  text-align: center;
+}
+.slider .carousel li h3, .slider .carousel li a, .slider .carousel li p {
+  color: #ffffff;
+}
+@media only screen and (min-width: 780px) {
+  .slider .carousel li {
+    width: 700px;
+  }
+}
+@media only screen and (min-width: 680px) and (max-width: 779px) {
+  .slider .carousel li {
+    width: 600px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 679px) {
+  .slider .carousel li {
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .slider .carousel li {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 319px) {
+  .slider .carousel li {
+    width: 200px;
+  }
+}
+
+.feed {
+  background-color: #ffffff;
+  margin: auto;
+}
+.feed ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.feed h3 {
+  color: #424242;
+  padding: 0 0.8em;
+}
+.feed li {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+.feed li a {
+  color: #cc0000;
+  margin: 0;
+  padding: 1em;
+}
+.feed li:hover {
+  background-color: #212121 !important;
+}
+.feed a:hover {
+  color: #fff !important;
+}
+@media only screen and (min-width: 780px) {
+  .feed {
+    width: 700px;
+  }
+}
+@media only screen and (min-width: 680px) and (max-width: 779px) {
+  .feed {
+    width: 600px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 679px) {
+  .feed {
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .feed {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 319px) {
+  .feed {
+    width: 200px;
+  }
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}

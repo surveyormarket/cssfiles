@@ -1,0 +1,188 @@
+$primary-color: #cc0000;
+$secondary-color: #ffffff;
+
+$breakpoint-tiny: "only screen and (max-width: 319px)";
+$breakpoint-small: "only screen and (min-width: 320px) and (max-width: 479px)";
+$breakpoint-medium: "only screen and (min-width: 480px) and (max-width: 679px)";
+$breakpoint-large: "only screen and (min-width: 680px) and (max-width: 779px)";
+$breakpoint-extra-large: "only screen and (min-width: 780px)";
+
+@mixin tiny-screens() {
+  @media #{$breakpoint-tiny} {
+    @content;
+  }
+}
+
+@mixin small-screens() {
+  @media #{$breakpoint-small} {
+    @content;
+  }
+}
+
+@mixin medium-screens() {
+  @media #{$breakpoint-medium} {
+    @content;
+  }
+}
+
+@mixin large-screens() {
+  @media #{$breakpoint-large} {
+    @content;
+  }
+}
+
+@mixin extra-large-screens() {
+  @media #{$breakpoint-extra-large} {
+    @content;
+  }
+}
+
+
+
+.description {
+	margin-top: 50px;
+}
+
+span.left-arrow, span.right-arrow {
+	color: $secondary-color;
+	cursor: pointer; 
+	display: block;
+	font-size: 1em;
+	height: auto;
+	padding: 1em;
+	position: absolute;
+	top: 80%;
+	transition: all 0.3s ease;
+	width: auto;
+	z-index: 999;
+	
+	&:hover {
+		background-color: #212121!important;
+		color:#ffffff;
+	}
+}
+
+.left-arrow {
+	right: 60px;
+}
+
+.right-arrow {
+	right: 0;
+}
+
+.slider {
+	color: $secondary-color;
+	overflow: hidden;
+	position: relative;
+	
+	.carousel {
+		height: 200px;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		
+		.carousel-footer {
+			color: #e40743;
+			bottom: -80px;
+			position: relative;
+		}
+		
+		li {
+			background-color: $primary-color;
+			display: block;
+			float: left;
+			height: 300px;
+			margin: 0;
+			padding: 70px 0;
+			position: relative;
+			text-align: center;
+			
+			h3, a, p {
+				color: $secondary-color;
+			}
+			
+			@include extra-large-screens {
+				width: 700px;
+			}
+
+			@include large-screens {
+				width: 600px;
+			}
+
+			@include medium-screens {
+				width: 400px;
+			}
+
+			@include small-screens {
+				width: 300px;
+			}
+
+			@include tiny-screens {
+				width: 200px;
+			}
+		}
+	}
+}
+
+.feed {
+	background-color: $secondary-color;
+	margin: auto;
+	
+	ul {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	h3 {
+		color: #424242;
+		padding: 0 0.8em;
+	}
+	
+	li {
+		align-items: center;
+		display: flex;
+		justify-content: flex-start;
+		list-style: none;
+		transition: background-color 0.3s ease;
+		width: 100%;
+		
+		a {color:#cc0000;
+			margin: 0;
+			padding: 1em;
+		}
+		
+		&:hover {
+			background-color: #212121!important;
+		  
+		}
+	}
+	a:hover {color:#fff!important;}
+	@include extra-large-screens {
+		width: 700px;
+	}
+	
+	@include large-screens {
+		width: 600px;
+	}
+	
+	@include medium-screens {
+		width: 400px;
+	}
+	
+	@include small-screens {
+		width: 300px;
+	}
+	
+	@include tiny-screens {
+		width: 200px;
+	}
+}
+
+.wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}

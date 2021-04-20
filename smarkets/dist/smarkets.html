@@ -107,5 +107,22 @@ input[type='checkbox'] {
 </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://gist.github.com/landsurveyorsunited/8c83d30f727fa9654c4ce6367addd25d/raw/8c8b16376ecc4f96ceb2134fc42f4ae6f2c3b5e4/script.js"></script>
+  <script>
+    var switcher$ = $('.switcher'),          // select element
+    switchTarget$ = $('.switch-target'); // iframe
+
+switcher$.on('change', switchIframeSrc); // event binding
+
+// our functiono to switch the iframe src
+function switchIframeSrc() {
+  // set the 'src' attribute of the iframe
+  // to the value of the selected option
+  switchTarget$.attr('src', switcher$.val());
+}
+
+// call the method on load
+switchIframeSrc();
+
+  </script>
 </body>
 </html>

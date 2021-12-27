@@ -1,0 +1,119 @@
+body {
+  background: url("https://storage.ning.com/topology/rest/1.0/file/get/8759407491?profile=original");
+  background-repeat: repeat;
+  background-size: cover;
+}
+.jumbotron {
+  background: rgba(0,0,0,0);
+}
+.jumbotron h1 {
+  font-family: 'Permanent Marker', cursive;
+}
+input {
+  background: transparent !important;
+  border: 1px solid #000 !important;
+  font-family: monospace;
+  font-size: 1.3em !important;
+  height: 45px !important;
+}
+input:focus {
+  color: #000;
+}
+input::-webkit-input-placeholder {
+  color: #333 !important;
+}
+input:-moz-placeholder {
+  color: #333 !important;
+}
+input::-moz-placeholder {
+  color: #333 !important;
+}
+input:-ms-input-placeholder {
+  color: #333 !important;
+}
+a.btn.btn-success {
+  font-family: monospace;
+  font-variant: small-caps;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  background: rgba(0,0,0,0);
+  border: 1px solid #000;
+  color: #000;
+  font-weight: 600;
+}
+#one,
+#two {
+  height: 100vh;
+}
+#action {
+  position: absolute;
+  width: 650px;
+  height: 400px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -325px;
+}
+.caps {
+  font-variant: small-caps;
+}
+.row {
+  padding-top: 45px;
+}
+.col-lg-6 {
+  display: inline;
+}
+#down {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  z-index: 15;
+  top: 90%;
+  left: 50%;
+  margin: 20px 0 0 -50px;
+  display: none;
+  font-size: 24pt !important;
+}
+#down i {
+  color: #000 !important;
+}
+#article {
+  font-family: 'Kalam', cursive !important;
+  font-size: 2.1em;
+  font-weight: 300;
+}
+#article h3 {
+  font-weight: 600;
+}
+#article a:link,
+#article a:visited {
+  color: #000;
+  font-weight: 400;
+}
+#two {
+  display: none;
+}
+.section {
+  border-bottom: 1px solid #333;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+.section h3 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.section p {
+  font-size: 1.3em;
+}
+#up {
+  text-align: center;
+}
+#about {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#about a {
+  text-decoration: none;
+  color: #000;
+}

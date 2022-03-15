@@ -1,4 +1,14 @@
+:root {
+  --colorOne: tomato;
+}
 
+body {
+  margin:0;
+  padding:0;
+  width:100%;
+  background:linear-gradient(to bottom right, #111 48%, #222 49%, var(--colorOne) 51%, #111 52%);
+  background-size:1em 1em;
+}
   * {
   box-sizing: border-box;
 }
@@ -35,7 +45,7 @@ a {
   margin: 10px 10px 0;
 }
 .header nav li a {
-  color: #666;
+  color: #fff;
   text-decoration: none;
 }
 .header nav li a:hover {
@@ -61,17 +71,18 @@ a {
   z-index: -1;
 }
 .post h3 {
-  margin: 0;
-  padding: 0.6em;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  font-weight: 600;
+    margin:0;
+    padding:0.6em;
+    background: rgba(0,0,0,0.6);
+    color:white;
+     font-weight: 600;
   font-size: 1.1em;
-  color: #fff;
-  font-weight: bold;
-  font-family: Helvetica;
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
-}
+    color: #fff;
+font-weight: bold;
+font-family: Helvetica;
+text-shadow: 1px 1px 1px #000, 
+               3px 3px 5px red; 
+  }
 .post .details {
   position: absolute;
   bottom: 0;

@@ -1,0 +1,460 @@
+
+  * {
+  box-sizing: border-box;
+}
+body {
+  background: url('https://storage.ning.com/topology/rest/1.0/file/get/10211912063?profile=RESIZE_930x') no-repeat;
+  background-size: cover;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+.header {
+  border-bottom: 1px solid #666;
+  overflow: auto;
+  margin: 0 1%;
+}
+.header h1 {
+  float: left;
+}
+.header nav {
+  float: right;
+  font-size: 0.7em;
+}
+.header nav li {
+  display: inline-block;
+  margin: 10px 10px 0;
+}
+.header nav li a {
+  color: #666;
+  text-decoration: none;
+}
+.header nav li a:hover {
+  text-decoration: underline;
+}
+.post {
+  width: 98%;
+  margin: 9px 1%;
+  position: relative;
+  float: left;
+}
+.post .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.post .content img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.post h3 {
+  margin: 0;
+  padding: 0.6em;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+.post .details {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 0.5em;
+}
+.post .details a {
+  color: white;
+}
+.post:before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+@media (min-width: 720px) {
+  .posts > div {
+    width: 23%;
+    font-size: 0.6em;
+  }
+  .posts > div .details {
+    font-size: 1.4em;
+  }
+  .posts > div:nth-of-type(1) {
+    width: 98%;
+    font-size: 1em;
+  }
+  .posts > div:nth-of-type(1) .details {
+    font-size: 1em;
+  }
+  .posts > div:nth-of-type(2) {
+    width: 64.66%;
+    font-size: 1em;
+  }
+  .posts > div:nth-of-type(2) .details {
+    font-size: 1em;
+  }
+  .posts > div:nth-of-type(3),
+  .posts > div:nth-of-type(4),
+  .posts > div:nth-of-type(7),
+  .posts > div:nth-of-type(8),
+  .posts > div:nth-of-type(9) {
+    width: 31.33%;
+    font-size: 0.8em;
+  }
+  .posts > div:nth-of-type(3) .details,
+  .posts > div:nth-of-type(4) .details,
+  .posts > div:nth-of-type(7) .details,
+  .posts > div:nth-of-type(8) .details,
+  .posts > div:nth-of-type(9) .details {
+    font-size: 1.1em;
+  }
+  .posts > div:nth-of-type(5),
+  .posts > div:nth-of-type(6) {
+    width: 48%;
+    font-size: 0.9em;
+  }
+  .posts > div:nth-of-type(5) .details,
+  .posts > div:nth-of-type(6) .details {
+    font-size: 1.2em;
+  }
+}
+#copy {
+  position: fixed;
+  z-index: 1000;
+  right: 150px;
+  top: -8px;
+  font-size: 0.65em;
+  padding: 8px 8px 2px 8px;
+  background: #323b44;
+  border: 2px solid #737c85;
+  border-radius: 0.7em;
+  opacity: 0.9;
+  box-shadow: 0 0 8px #5f7182;
+  color: #eee;
+  background-position: fixed;
+  background: linear-gradient(180deg, #f14, #ff8300);
+}
+#copy a {
+  color: #ccc;
+  text-decoration: none;
+}
+#copy a:hover {
+  color: #fff;
+}
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-1em);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes knock {
+  0% {
+    -webkit-transform: translateY(1em);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes knock {
+  0% {
+    transform: translateY(1em);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+body,
+html {
+  font-size: 1.4em;
+  height: 100%;
+}
+body {
+  background: #000000;
+}
+h1,
+h2 {
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+h1 {
+  -webkit-animation: bounce 0.2s ease 0.9s;
+  animation: bounce 0.2s ease 0.9s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  color: white;
+}
+h1 span {
+  transform-origin: bottom center;
+  transform: scale(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+h1 span:nth-child(1) {
+  -webkit-animation: scale 0.1s linear;
+  animation: scale 0.1s linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+h1 span:nth-child(2) {
+  -webkit-animation: scale 0.2s linear 0.3s;
+  animation: scale 0.2s linear 0.3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  font-size: 1.1em;
+}
+h1 span:nth-child(3) {
+  -webkit-animation: scale 0.2s linear 0.4s;
+  animation: scale 0.2s linear 0.4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  font-size: 1.3em;
+  color: #f8d545;
+}
+h2 {
+  -webkit-animation: knock 0.1s linear 0.8s;
+  animation: knock 0.1s linear 0.8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  transform: translateY(1em);
+  opacity: 0;
+  color: #f8d545;
+  font-size: 3.55em;
+}
+:root {
+  --gutter-horizontal: 10vw;
+  --gutter-vertical: 10vh;
+}
+img {
+  max-width: 100%;
+}
+details + details {
+  margin-top: 1em;
+}
+details.modal summary {
+  background: #cc0000;
+  border: 2px solid black;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+}
+details.modal summary::-webkit-details-marker {
+  display: none;
+}
+details.modal summary::before {
+  content: "👁️‍🗨️";
+  display: inline-block;
+  padding-right: 0.25em;
+}
+details[open].modal summary::before {
+  content: "✖️";
+}
+details[open].modal {
+  overflow: auto;
+  padding: 1em;
+  position: fixed;
+  z-index: 10;
+}
+details[open].modal,
+details[open].modal::after {
+  bottom: 10vh;
+  bottom: var(--gutter-vertical);
+  left: 10vw;
+  left: var(--gutter-horizontal);
+  right: 10vw;
+  right: var(--gutter-horizontal);
+  top: 10vh;
+  top: var(--gutter-vertical);
+}
+details[open].modal::before,
+details[open].modal::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+}
+details[open].modal::before {
+  background: rgba(0, 0, 0, 0.75);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+details[open].modal::after {
+  background: #fff;
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#elevator {
+  z-index: 1000;
+  /*increase if it's behind something else*/
+  height: 96.3%;
+  font-size: 0.6em !important;
+  /*the height of the tab*/
+  position: fixed;
+  text-align: center;
+  /*you can change it to 'left' or 'right'*/
+  bottom: 0px;
+  left: 5px;
+  /*how long it takes to go up*/
+  /*how long it takes to go up*/
+  /*how long it takes to go up*/
+  transition-duration: 1.5s;
+  /*how long it takes to go up*/
+}
+#elevator:hover {
+  z-index: 1000;
+  bottom: 1205px;
+  left: 5px;
+}
+#room {
+  bottom: -1200px;
+  position: absolute;
+  width: 300px;
+  /*width of tab*/
+  height: 100%;
+  overflow: scroll;
+  /*change to 'scroll' if you want a scrollbar*/
+  padding: 10px;
+  background: white;
+  /*the tab's background color*/
+  opacity: 1;
+  line-height: 13px;
+  /*shadow border code*/
+  /*shadow border code*/
+  box-shadow: 0px 0px 3px 1px white;
+  /*shadow border code*/
+  /*rounds the tab's corners*/
+  /*rounds the tab's corners*/
+  border-radius: 3px;
+  /*rounds the tab's corners*/
+  border: 1px solid black;
+  /*tab border*/
+  text-align: center;
+  font-size: 0.9em !important;
+  /*you can change it to 'left' or 'right'*/
+}
+#room p {
+  font-size: 0.9em !important;
+}
+.button:hover {
+  background: #cc0000;
+}
+.button {
+  display: block;
+  position: fixed;
+  left: 5px;
+  /*distance from the left side*/
+  top: 5px;
+  /*distance from the top*/
+  padding: 3px;
+  width: 55px;
+  /*width of button*/
+  height: 55px;
+  /*height of button*/
+  background-color: black;
+  /*button's background color*/
+  border-radius: 85px;
+  /*the lower it is, the less round it'll be*/
+  border: 1px solid black;
+  /*button border code*/
+  overflow: hidden;
+}
+.dividers {
+  border: 2px solid black;
+  /*border code for dividers*/
+  width: 95%;
+  /*width of dividers*/
+  height: 21px;
+  /*height of dividers*/
+  padding: 3px;
+  margin: auto;
+  line-height: 20px;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #ffd143 0%, #ff9153 90%);
+  /*background color of dividers*/
+  color: black;
+  /*font color of dividers*/
+  font-weight: bold;
+  /*font weight (none or bold)*/
+}
+#google_translate_element {
+  position: absolute;
+  bottom: 17px;
+  z-index: 99999;
+  left: 23px;
+}
+@media (max-width: 667px) {
+  #google_translate_element {
+    bottom: 33px;
+    right: 60px;
+  }
+}
+

@@ -360,19 +360,7 @@ body {
   }
 </style>
 <script>
-  var websites = JSON.parse(window.localStorage.getItem('spider-web-list'));
-if (websites == null || websites.length == 0) {
-  websites = ['https://vendorchat.glideapp.io/?spider_tab_iframe'];
-}
 
-var widthList = JSON.parse(window.localStorage.getItem('spider-web-list-width'));
-console.log("width list is " + websites)
-if(widthList == null || widthList.length < websites.length) {
-  widthList = []
-  while(widthList.length < websites.length) {
-    widthList.push(1)
-  }
-}
 
 $(document).ready(function () {
   // Populate the websites
